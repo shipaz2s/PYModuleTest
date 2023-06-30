@@ -1,0 +1,28 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "cppdbg",
+			"request": "launch",
+			"name": "Debug",
+			"program": "${command:cmake.launchTargetPath}",
+			"args": [],
+			"cwd": "${command:cmake.getLaunchTargetDirectory}",
+			"environment": [
+				{
+					"name": "PYTHONPATH",
+					"value": "D:\\Program Files\\Python311"
+				},
+				{
+					"name": "PYTHONHOME",
+					"value": "D:\\Program Files\\Python311"
+				}
+			],			
+			"MIMode": "gdb",
+			"miDebuggerPath": "D:/dev/mingw64/bin/gdb.exe"
+		}
+	]
+}

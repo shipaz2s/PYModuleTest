@@ -1,0 +1,42 @@
+{
+	"version": 6,
+	"include": [
+		"D:/Development/CMakePresets/mingw32_x64_preset.json"
+	],
+	"configurePresets": [
+		{
+			"name": "pymodule-mingw32_x64-debug",
+			"displayName": "PYModule Mingw32_x64 Debug",
+			"description": "Mingw32_x64",
+			"inherits": "mingw32_x64-debug",
+			"cacheVariables": {
+				"PYTHON_DIR": "D:/Program Files/Python311",
+				"PY_VERSION": "311"
+			}
+		},
+		{
+			"name": "pymodule-mingw32_x64-release",
+			"displayName": "PYModule Mingw32_x64 Release",
+			"description": "Mingw32_x64",
+			"inherits": "mingw32_x64-release",
+			"cacheVariables": {
+				"PYTHON_DIR": "D:/Program Files/Python311",
+				"PY_VERSION": "311"
+			}
+		}
+	],
+	"buildPresets": [
+		{
+			"name": "pymodule-mingw32_x64-debug",
+			"displayName": "PYModule Mingw32_x64 Debug",
+			"configurePreset": "pymodule-mingw32_x64-debug",
+			"jobs": 15
+		},
+		{
+			"name": "pymodule-mingw32_x64-release",
+			"displayName": "PYModule Mingw32_x64 Release",
+			"configurePreset": "pymodule-mingw32_x64-release",
+			"jobs": 15
+		}
+	]
+}
